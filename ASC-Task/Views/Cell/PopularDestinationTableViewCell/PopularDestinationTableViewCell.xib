@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="293" id="KGk-i7-Jjw" customClass="PopularDestinationTableViewCell" customModule="ASC_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="293"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="293"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXl-A4-bka">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="293"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Destinations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uZ-hX-EmT">
+                                <rect key="frame" x="20" y="20" width="157" height="143"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="g4V-7c-E3g">
+                                <rect key="frame" x="0.0" y="173" width="320" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hs9-sI-sQn"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sET-Ti-spx">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g4V-7c-E3g" firstAttribute="top" secondItem="3uZ-hX-EmT" secondAttribute="bottom" constant="10" id="2fM-hz-eK1"/>
+                            <constraint firstItem="g4V-7c-E3g" firstAttribute="leading" secondItem="FXl-A4-bka" secondAttribute="leading" id="EjY-Er-nwV"/>
+                            <constraint firstItem="3uZ-hX-EmT" firstAttribute="top" secondItem="FXl-A4-bka" secondAttribute="top" constant="20" id="I5Y-mh-iPu"/>
+                            <constraint firstItem="g4V-7c-E3g" firstAttribute="centerX" secondItem="FXl-A4-bka" secondAttribute="centerX" id="OTA-UO-oIL"/>
+                            <constraint firstAttribute="bottom" secondItem="g4V-7c-E3g" secondAttribute="bottom" constant="20" id="R6I-GC-wle"/>
+                            <constraint firstItem="3uZ-hX-EmT" firstAttribute="leading" secondItem="FXl-A4-bka" secondAttribute="leading" constant="20" id="maV-sp-Q92"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FXl-A4-bka" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4ex-oL-mPi"/>
+                    <constraint firstItem="FXl-A4-bka" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yan-FL-8jd"/>
+                    <constraint firstItem="FXl-A4-bka" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hlP-1C-6PK"/>
+                    <constraint firstItem="FXl-A4-bka" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rUO-J1-54t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="g4V-7c-E3g" id="kIn-9p-yz2"/>
+                <outlet property="titleLabel" destination="3uZ-hX-EmT" id="AtK-To-OmD"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="209.26339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

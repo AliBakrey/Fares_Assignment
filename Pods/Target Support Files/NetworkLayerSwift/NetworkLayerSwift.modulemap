@@ -1,0 +1,6 @@
+framework module NetworkLayerSwift {
+  umbrella header "NetworkLayerSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

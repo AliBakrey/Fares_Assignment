@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PopularDestinationCollectionViewCell" customModule="ASC_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="146"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Epw-Hj-4Et">
+                        <rect key="frame" x="0.0" y="10" width="233" height="126"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2kC-Eg-ywY">
+                                <rect key="frame" x="86.5" y="0.0" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.97801595929999996" green="0.26816055179999998" blue="0.2200091481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1oJ-BY-jfp"/>
+                                    <constraint firstAttribute="width" secondItem="2kC-Eg-ywY" secondAttribute="height" id="tgg-Aq-V2E"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZe-RT-KAJ">
+                                <rect key="frame" x="98" y="64" width="37.5" height="62"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Epw-Hj-4Et" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OyQ-6h-BkC"/>
+                <constraint firstItem="Epw-Hj-4Et" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="VNE-kl-hbR"/>
+                <constraint firstItem="Epw-Hj-4Et" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="diZ-pP-IAs"/>
+                <constraint firstItem="Epw-Hj-4Et" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kjP-tg-Pmt"/>
+            </constraints>
+            <size key="customSize" width="233" height="146"/>
+            <connections>
+                <outlet property="countryImage" destination="2kC-Eg-ywY" id="T2T-TH-azS"/>
+                <outlet property="titleLabel" destination="RZe-RT-KAJ" id="XaM-1a-MtR"/>
+            </connections>
+            <point key="canvasLocation" x="264.49275362318843" y="158.03571428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

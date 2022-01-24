@@ -1,0 +1,6 @@
+framework module Pods_ASC_Task {
+  umbrella header "Pods-ASC-Task-umbrella.h"
+
+  export *
+  module * { export * }
+}

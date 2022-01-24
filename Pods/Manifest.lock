@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.5.0)
+  - CollectionViewPagingLayout (1.0.3)
+  - DataCache (1.6.0)
+  - Kingfisher (7.1.2)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - NetworkLayerSwift (0.4.0):
+    - DataCache
+    - Moya (~> 14.0)
+    - ReachabilitySwift
+  - ReachabilitySwift (5.0.0)
+
+DEPENDENCIES:
+  - CollectionViewPagingLayout
+  - Kingfisher
+  - NetworkLayerSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CollectionViewPagingLayout
+    - DataCache
+    - Kingfisher
+    - Moya
+    - NetworkLayerSwift
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CollectionViewPagingLayout: 4c51718386157a6f6e37634298e5f2364acc8b7d
+  DataCache: 5f24b356848a37469dbebec89c28ca88b4ef9294
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  NetworkLayerSwift: b307eb318e532aa104354ad4b73f530fd71453fa
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+
+PODFILE CHECKSUM: 1bc0fe1cae4f6463206c4a8a60056ccbdba63c01
+
+COCOAPODS: 1.11.2
